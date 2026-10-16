@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>">
+  <title>Manos — Sonido y Dibujo Abstracto</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.0/p5.min.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="sketch-container"></div>
+
+  <div id="alert" class="alert hidden">
+    No se detecta ninguna mano. Muéstrale la mano a la cámara.
+  </div>
+
+  <div id="gesture-info" class="info">
+    Gesto: <span id="gesture-label">--</span> &nbsp;|&nbsp;
+    Mano: <span id="hand-label">--</span> &nbsp;|&nbsp;
+    Confianza: <span id="confidence-label">--%</span>
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
